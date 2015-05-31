@@ -1,0 +1,13 @@
+body {
+	text-align: center;
+	color: darkblue;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+footer {
+	font-size: small;
+	float: right;
+}
