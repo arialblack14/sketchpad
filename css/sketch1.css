@@ -9,6 +9,8 @@ body {
 }
 
 .container {
+	width: 800px;
+	height: 800px;
 	margin-top: 40px;
 }
 
@@ -35,13 +37,12 @@ p {
 
 .inDiv {
 	background-color: lightblue;
-	margin: 1px;
 	float: left;
 }
 
 /* Buttons */
 
-#clearGrid, #randomColor, #gridColor {
+#reset, #randomColor, #gridColor {
 	background-color: #ffbbee;
 	-moz-border-radius: 28px;
 	-webkit-border-radius: 28px;
@@ -56,10 +57,10 @@ p {
 	text-shadow:0px 1px 0px #e5a8d6;
 	margin-top: 40px;
 }
-#clearGrid:hover, #randomColor:hover, #gridColor:hover {
+#reset:hover, #randomColor:hover, #gridColor:hover {
 	background-color: #58c0ff;
 }
-#clearGrid:active, #randomColor:active, #gridColor:active {
+#reset:active, #randomColor:active, #gridColor:active {
 	position:relative;
 	top:1px;
 }

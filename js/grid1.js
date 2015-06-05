@@ -3,12 +3,8 @@ $(document).ready(function() {
 	var container = $('.container');
 	var outDiv = $('<div class="outDiv"></div>');
 	var inDiv = $('<div class="inDiv"></div>');
-
-	console.log(numOfGrids);
 	
-	var boxWidth = Math.round(container.width()/numOfGrids);
-
-	console.log(boxWidth);
+	var boxWidth = 800/numOfGrids;
 
 /* 
 	If we wanted the number of pixels to increase we would 
@@ -32,12 +28,16 @@ $(document).ready(function() {
 	
 	// set width and height of td, tr elements
 	$(".inDiv").css("width", boxWidth).css("height", boxWidth);
+
 	$(".inDiv").hover(function(){
 		$(this).css("background-color", "orange");
 	});
 
-	$('#clearGrid').on('click', function() {
+	$('#reset').on('click', function() {
 		$('.inDiv').css("background-color", "lightblue");
+		$('.inDiv').hover(function(){
+			$(this).css("background-color", "orange");
+		});
 	});
 
 	/*
@@ -52,9 +52,9 @@ $(document).ready(function() {
 	});
 
 	$('#randomColor').on('click', function() {
-		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-
 		$('.inDiv').hover(function() {
+			var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
 			$(this).css("background-color", hue);
 		});
 	});
