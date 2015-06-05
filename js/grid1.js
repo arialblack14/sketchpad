@@ -21,21 +21,41 @@ $(document).ready(function() {
 
 	var divLoop, loopGuard = numOfGrids;
 
-	for (; numOfGrids>0; numOfGrids--) {
-		
+	for (; numOfGrids>0; numOfGrids--) {		
 		$('<div class="outDiv"></div>').appendTo($(".container"));
 
 		for ( ; divLoop>0; divLoop-- ) {
 			$('<div class="inDiv"></div>').appendTo($('.outDiv'));
-			console.log("in loop 2 " + divLoop);
 		}
 		divLoop = loopGuard;
-		console.log("in loop" + numOfGrids);
 	}
 	
 	// set width and height of td, tr elements
 	$(".inDiv").css("width", boxWidth).css("height", boxWidth);
 	$(".inDiv").hover(function(){
-		$(this).css("background-color", "yellow");
+		$(this).css("background-color", "orange");
+	});
+
+	$('#clearGrid').on('click', function() {
+		$('.inDiv').css("background-color", "lightblue");
+	});
+
+	/*
+		Read tutorial from : 
+		http://buildinternet.com/2009/09/its-a-rainbow-color-changing-text-and-backgrounds/
+	*/
+	
+	$('#gridColor').on('click', function() {
+		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
+		$('.inDiv').css("background-color", hue);
+	});
+
+	$('#randomColor').on('click', function() {
+		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
+		$('.inDiv').hover(function() {
+			$(this).css("background-color", hue);
+		});
 	});
 });
