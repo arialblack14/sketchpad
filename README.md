@@ -3,5 +3,5 @@
 and jQuery.</p>
 <p>This is a part of my learning the aforementioned technologies trip.</p>
 
-<p>A project for the [theOdinProject](http://www.theodinproject.com/web-development-101/javascript-and-jquery).</p>
+<p>A project for the <a href="http://www.theodinproject.com/web-development-101/javascript-and-jquery">theOdinProject</a></p>
 </blockquote>
