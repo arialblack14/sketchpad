@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	var numOfGrids = prompt("Please provide desired dimensions of grid.");
 	var container = $('.container');
-	var outDiv = $('<div class="outDiv"></div>');
 	var inDiv = $('<div class="inDiv"></div>');
 	
 	var boxWidth = 800/numOfGrids;
