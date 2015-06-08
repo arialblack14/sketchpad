@@ -3,5 +3,5 @@
 and jQuery.</p>
 <p>This is a part of my learning the aforementioned technologies trip.</p>
 
-<p>I am also writing down stuff because i am beginning to like markdown and git.</p>
+<p>A project for the [theOdinProject](http://www.theodinproject.com/web-development-101/javascript-and-jquery).</p>
 </blockquote>
