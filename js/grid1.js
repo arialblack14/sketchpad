@@ -18,10 +18,10 @@ $(document).ready(function() {
 	var divLoop, loopGuard = numOfGrids;
 
 	for (; numOfGrids>0; numOfGrids--) {		
-		$('<div class="outDiv"></div>').appendTo($(".container"));
+		$('<br>').appendTo(container);
 
 		for ( ; divLoop>0; divLoop-- ) {
-			$('<div class="inDiv"></div>').appendTo($('.outDiv'));
+			$('<div class="inDiv"></div>').appendTo(container);
 		}
 		divLoop = loopGuard;
 	}
